@@ -1,9 +1,15 @@
 fileFormatVersion: 2
 guid: 8678c44ea463edb4598ac5acfb3f93cd
 TextureImporter:
-  internalIDToNameTable: []
+  fileIDToRecycleName:
+    21300000: Blue Tank_0
+    21300002: Blue Tank_1
+    21300004: Blue Tank_2
+    21300006: Blue Tank_3
+    21300008: Blue Tank_4
+    21300010: Blue Tank_5
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 5
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -21,10 +27,6 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
-  streamingMipmaps: 0
-  streamingMipmapsPriority: 0
-  vTOnly: 0
-  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -33,7 +35,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -56,16 +58,11 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
-  flipbookRows: 1
-  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  ignorePngGamma: 0
-  applyGammaDecoding: 0
-  cookieLightType: 0
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -76,8 +73,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -88,8 +84,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 2
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -100,7 +95,17 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -119,8 +124,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1703dc91f4db5c40adbfa78d68d0259
-      internalID: -1745664318
+      spriteID: bdae636cb065dd9489a3db2ed89a6fd1
       vertices: []
       indices: 
       edges: []
@@ -140,8 +144,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 782e4bce2eb250847ae1d7f3f60836b5
-      internalID: 1300383285
+      spriteID: 25abecf056b93d44f9d56db75bc6855d
       vertices: []
       indices: 
       edges: []
@@ -161,8 +164,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4430c9aa55f927843b7c8c5941e56c57
-      internalID: 1466870802
+      spriteID: 74fbd98e5ca937b4f96e4fe7a8778d07
       vertices: []
       indices: 
       edges: []
@@ -182,8 +184,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38de2eb5d8432504a9c7dc80e7a1096d
-      internalID: 1459662758
+      spriteID: 84a0d44ddb71b7942b5c9efbfd61be39
       vertices: []
       indices: 
       edges: []
@@ -203,8 +204,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f36dbc3168efaa1449992e7c820c6540
-      internalID: 1083870665
+      spriteID: 74f869ddc727d754b9558858aaf1961b
       vertices: []
       indices: 
       edges: []
@@ -224,8 +224,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d923b326efa13684796f8cdac60d1adf
-      internalID: 885374512
+      spriteID: a936bd612d1ad7d4f9a6202750008ebc
       vertices: []
       indices: 
       edges: []
@@ -234,22 +233,11 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
-    nameFileIdTable:
-      Blue Tank_0: -1745664318
-      Blue Tank_1: 1300383285
-      Blue Tank_2: 1466870802
-      Blue Tank_3: 1459662758
-      Blue Tank_4: 1083870665
-      Blue Tank_5: 885374512
   spritePackingTag: 
-  pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

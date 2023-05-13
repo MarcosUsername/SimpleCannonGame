@@ -6,7 +6,7 @@ Copyright (c) 2023 by Marco Jaime Silvestri <ItsMarcoSilvestri@gmail.com>
 
 ## Required Software
 
-This project uses Unity 2021.3.25f1
+This project uses Unity 2018.1.0f2
 
 ## Getting Started
 

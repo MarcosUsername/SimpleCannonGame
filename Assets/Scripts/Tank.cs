@@ -1,93 +1,57 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Tank : MonoBehaviour
 {
+    public Rigidbody2D bulletPrefab;
+    public Transform tCurrentCannon;
 
-    [SerializeField]
-    private Rigidbody2D rBulletPrefab;
+    public float fTankSpeed = 5f;
+    public float fMaxRelativeVelocity = 10f;
+    public float fMisileForce = 5f; 
 
-    [SerializeField]
-    private Transform tCurrentCannon;
+    public bool IsTurn { get { return TankManager.singleton.IsMyTurn(iTankId); } }
 
-    public float fDriveSpeed = 5f;
-    public float fMaxVelocity = 10f;
-    public float fMisileForce = 5f;
+    public int iTankId;
+    TankHealth tTankHealth;
+    SpriteRenderer ren;
 
-    public int iTankID;
-
-    private SpriteRenderer sSpriteRenderer;
-
-    private Camera cMainCam;
-
-    public bool bIsTurn { get { return TankManager.tmInstance.IsMyTurn(iTankID); } }
-
-    private TankHealth tTankHealth;
-
-    private Vector3 diff;
-
-    void Start()
+    private void Start()
     {
 
-        sSpriteRenderer = GetComponent<SpriteRenderer>();
-
-        // get health script
         tTankHealth = GetComponent<TankHealth>();
+        ren = GetComponent<SpriteRenderer>();
 
-        cMainCam = Camera.main;
-        
     }
 
-    void Update()
+    private void Update()
     {
 
-        if (!bIsTurn)
+        if (!IsTurn)
             return;
 
         RotateGun();
 
-        MovementAndShooting();
-
-    }
-
-    void RotateGun()
-    {
-
-        diff = cMainCam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        diff.Normalize();
-
-        float rot_Z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
-
-        tCurrentCannon.rotation = Quaternion.Euler(0, 0, rot_Z + 180f);
-
-    }
-
-    void MovementAndShooting()
-    {
-
-        float hor = Input.GetAxis("Horizontal");
-
+        var hor = Input.GetAxis("Horizontal");
         if (hor == 0)
         {
 
             tCurrentCannon.gameObject.SetActive(true);
 
+            ren.flipX = tCurrentCannon.eulerAngles.z < 180;
+
             if (Input.GetKeyDown(KeyCode.Space))
             {
 
-                Rigidbody2D bullet = Instantiate(rBulletPrefab,
-                    tCurrentCannon.position - tCurrentCannon.right,
-                    tCurrentCannon.rotation);
+                var p = Instantiate(bulletPrefab,
+                                   tCurrentCannon.position - tCurrentCannon.right,
+                                   tCurrentCannon.rotation);
 
-                bullet.AddForce(-tCurrentCannon.right * fMisileForce, ForceMode2D.Impulse);
+                p.AddForce(-tCurrentCannon.right * fMisileForce, ForceMode2D.Impulse);
 
-                if (bIsTurn)
-                {
-
-                    TankManager.tmInstance.NextTank();
-
-                }
+                if (IsTurn)
+                    TankManager.singleton.NextTank();
 
             }
 
@@ -97,28 +61,53 @@ public class Tank : MonoBehaviour
         {
 
             tCurrentCannon.gameObject.SetActive(false);
-
-            transform.position += Vector3.right * hor * Time.deltaTime * fDriveSpeed;
-
-            sSpriteRenderer.flipX = Input.GetAxis("Horizontal") > 0f;
+            transform.position += Vector3.right *
+                                hor *
+                                Time.deltaTime *
+                                fTankSpeed;            
+             ren.flipX = Input.GetAxis("Horizontal") > 0;
 
         }
+
+    }
+
+    void RotateGun()
+    {
+
+        var diff = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        diff.Normalize();
+
+        float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+        tCurrentCannon.rotation = Quaternion.Euler(0f, 0f, rot_z + 180);
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        if (collision.relativeVelocity.magnitude > fMaxRelativeVelocity)
+        {
+
+            tTankHealth.ChangeHealth(-3);
+            if (IsTurn)
+                TankManager.singleton.NextTank();
+
+        }  
 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.CompareTag("Bullet"))
+        if (collision.CompareTag("Explosion"))
         {
 
-            tTankHealth.ChangeHealth(-10);
-
-            if (bIsTurn)
-                TankManager.tmInstance.NextTank();
+            tTankHealth.ChangeHealth(-100);
+            if (IsTurn)
+                TankManager.singleton.NextTank();
 
         }
-
+            
     }
 
 }

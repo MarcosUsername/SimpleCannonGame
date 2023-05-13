@@ -1,81 +1,74 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TankManager : MonoBehaviour
 {
+    Tank[] tanks;
+    public Transform tTankCamera;
 
-    public static TankManager tmInstance;
-
-    private Tank[] Tank;
-
-    private Transform tTankCamera;
+    public static TankManager singleton;
 
     private int iCurrentTank;
 
-    private void Awake()
+    void Start()
     {
 
-        if (tmInstance != null)
-            Destroy(this);
-        else
-            tmInstance = this;
-
-    }
-
-    private void Start()
-    {
-
-        Tank = GameObject.FindObjectsOfType<Tank>();
-        tTankCamera = Camera.main.transform;
-
-        for(int i = 0; i < Tank.Length; i++)
+        if (singleton != null)
         {
 
-            Tank[i].iTankID = i;
+            Destroy(gameObject);
+            return;
 
         }
 
-        NextTank();
+        singleton = this;
 
-    }
+        tanks = GameObject.FindObjectsOfType<Tank>();
+        tTankCamera = Camera.main.transform;
 
-    public bool IsMyTurn(int i)
-    {
+        for (int i = 0; i < tanks.Length; i++)
+        {
 
-        return i == iCurrentTank;
+            tanks[i].iTankId = i;
+
+        }
 
     }
 
     public void NextTank()
     {
 
-        StartCoroutine(_NextTank());
+        StartCoroutine(NextTankCoroutine());
 
     }
 
-    public IEnumerator _NextTank()
+    public IEnumerator NextTankCoroutine()
     {
 
-        int nextTank = iCurrentTank + 1;
-        iCurrentTank -= 1;
+        var vNextTank = iCurrentTank + 1;
+        iCurrentTank = -1;
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(2);
 
-        iCurrentTank = nextTank;
+        iCurrentTank = vNextTank;
+        if (iCurrentTank >= tanks.Length)
+        {
 
-        if (iCurrentTank >= Tank.Length)
             iCurrentTank = 0;
 
-        tTankCamera.SetParent(Tank[iCurrentTank].transform);
-        tTankCamera.localPosition = Vector3.zero + Vector3.back * 10f;
+        }
+
+        tTankCamera.SetParent(tanks[iCurrentTank].transform);
+        tTankCamera.localPosition = Vector3.zero + Vector3.back * 10;
 
     }
 
-    void Update()
-    {
-        
 
+    public bool IsMyTurn(int i)
+    {
+
+        return i == iCurrentTank;
 
     }
 

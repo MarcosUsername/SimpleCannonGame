@@ -1,22 +1,19 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class TankHealth : MonoBehaviour
 {
-
-    private int iHealth;
+    public int iHealth;
     public int iMaxHealth = 100;
+    public Text txHealth;
 
-    [SerializeField]
-    private TextMeshProUGUI xHealthTxt;
-
-    void Start()
+	void Start ()
     {
 
         iHealth = iMaxHealth;
-        xHealthTxt.text = iHealth.ToString();
+        txHealth.text = iHealth.ToString();
 
     }
 
@@ -24,20 +21,14 @@ public class TankHealth : MonoBehaviour
     {
 
         iHealth += change;
-
         if (iHealth > iMaxHealth)
+        {
+
             iHealth = iMaxHealth;
-        else if (iHealth <= 0)
-            iHealth = 0;
 
-        xHealthTxt.text = iHealth.ToString();
+        }
 
-    }
-
-    void Update()
-    {
-       
-        
+        txHealth.text = iHealth.ToString();
 
     }
 
