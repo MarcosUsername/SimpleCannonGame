@@ -18,4 +18,6 @@ All rights reserved.
 
 ## Links
 
-https://github.com/MarcosUsername/SimpleCannonGame
+GitHub - https://github.com/MarcosUsername/SimpleCannonGame
+Slack - https://join.slack.com/t/jatask-marcosilvestri/shared_invite/zt-1uvr76h6v-steLMgjpml4SwokIJAt7kg
+
