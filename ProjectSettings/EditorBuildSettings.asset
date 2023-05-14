@@ -13,12 +13,15 @@ EditorBuildSettings:
     guid: ed19ccb4f681a364688c06ce9bfc9607
   - enabled: 1
     path: Assets/Scenes/Options Scene.unity
-    guid: 00fd29e8dbc2a6d4fa40e4d1496c908a
+    guid: ef5c7ed8127cede4e8ee42acd4952d63
   - enabled: 1
-    path: Assets/Scenes/Singleplayer Scene.unity
+    path: Assets/Scenes/Load Scene.unity
+    guid: 1c322b8fb21060042be22124228b4ebb
+  - enabled: 1
+    path: Assets/Scenes/Single Scene.unity
     guid: efcd66d0a7b7af94d993bfbdd5921550
   - enabled: 1
-    path: Assets/Scenes/Multiplayer Game Scene.unity
+    path: Assets/Scenes/Multi Scene.unity
     guid: d616b4e79aa99a54c94240a9ccb6b862
   - enabled: 1
     path: Assets/Scenes/End Scene.unity

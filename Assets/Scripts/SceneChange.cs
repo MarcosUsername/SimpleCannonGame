@@ -8,12 +8,19 @@ using Random = UnityEngine.Random;
 public class SceneChange : MonoBehaviour
 {
 
-    private int iMapChoice;
+    SceneController sSceneController;
+    [SerializeField] GameObject gObject;
+    public int iMapChoice;
+    public int iGameMode;
 
     void Start()
     {
 
+        iGameMode = 3;
         iMapChoice = 1;
+        sSceneController = gObject.GetComponent<SceneController>();
+        //iMapChoice = Random.Range(1, 3);
+        //Debug.Log("The chosen map number is " + iMapChoice);
 
     }
 
@@ -28,7 +35,6 @@ public class SceneChange : MonoBehaviour
     {
 
         SceneManager.LoadScene("Splash Scene");
-
         Debug.Log("Chaning to the 'SPLASH SCENE'");
 
     }
@@ -37,7 +43,6 @@ public class SceneChange : MonoBehaviour
     {
 
         SceneManager.LoadScene("Start Scene");
-
         Debug.Log("Chaning to the 'START SCENE'");
 
     }
@@ -45,9 +50,26 @@ public class SceneChange : MonoBehaviour
     public void SceneChangeOptions()
     {
 
-        SceneManager.LoadScene("Start Scene");
-
+        SceneManager.LoadScene("Options Scene");
         Debug.Log("Chaning to the 'OPTIONS SCENE'");
+
+    }
+
+    public void SceneChangeLoadSingle()
+    {
+
+        iGameMode = 0;
+        SceneManager.LoadScene("Load Scene");
+        Debug.Log("Chaning to the 'LOAD SCENE' then 'SINGLE'");
+
+    }
+
+    public void SceneChangeLoadMulti()
+    {
+
+        iGameMode = 1;
+        SceneManager.LoadScene("Load Scene");
+        Debug.Log("Chaning to the 'LOAD SCENE' then 'MULTI'");
 
     }
 
@@ -55,11 +77,9 @@ public class SceneChange : MonoBehaviour
     {
 
         iMapChoice = Random.Range(1, 3);
-
         Debug.Log("The chosen map number is " + iMapChoice);
 
         SceneManager.LoadScene("Single Scene");
-
         Debug.Log("Chaning to the 'SINGLE SCENE'");
 
     }
@@ -68,11 +88,9 @@ public class SceneChange : MonoBehaviour
     {
 
         iMapChoice = Random.Range(1, 3);
-
         Debug.Log("The chosen map number is " + iMapChoice);
 
-        SceneManager.LoadScene("Multiplayer Scene");
-
+        SceneManager.LoadScene("Multi Scene");
         Debug.Log("Chaning to the 'MULTI SCENE'");
 
     }
@@ -81,7 +99,6 @@ public class SceneChange : MonoBehaviour
     {
 
         Application.Quit();
-
         Debug.Log("The game should 'QUIT'");
 
     }
