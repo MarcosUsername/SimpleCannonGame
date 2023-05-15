@@ -787,8 +787,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b309a7d772c96489cc5ba88a66181e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sSceneChange: {fileID: 0}
-  gObject: {fileID: 0}
+  sSceneChange: {fileID: 784467486}
+  gObject: {fileID: 784467485}
   gInput: {fileID: 0}
   iGameMode: 0
 --- !u!1 &1457715593
@@ -825,8 +825,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -246, y: -148}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0.000030518, y: -212.75}
+  m_SizeDelta: {x: 230.35, y: 97.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1457715595
 MonoBehaviour:

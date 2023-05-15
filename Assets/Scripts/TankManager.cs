@@ -25,7 +25,7 @@ public class TankManager : MonoBehaviour
         singleton = this;
 
         tanks = GameObject.FindObjectsOfType<TankMulti>();
-        tTankCamera = Camera.main.transform;
+        //tTankCamera = Camera.main.transform;
 
         for (int i = 0; i < tanks.Length; i++)
         {

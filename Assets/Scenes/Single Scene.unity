@@ -590,44 +590,6 @@ MonoBehaviour:
   iHealth: 0
   iMaxHealth: 100
   txHealth: {fileID: 2138654817}
---- !u!114 &50746285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 50746282}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1e390833d2b8d4baf84027a7dfbec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 515448894}
-  fTankSpeed: 0.1
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  iTankId: 0
-  gTank: {fileID: 50746282}
---- !u!114 &50746286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 50746282}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84ef669f6085a3b4a8d4ff676a4d437f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 515448894}
-  fTankSpeed: 0.05
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  gTank: {fileID: 50746282}
-  gCannon: {fileID: 515448893}
 --- !u!1 &81019333
 GameObject:
   m_ObjectHideFlags: 0
@@ -3279,25 +3241,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1612596413617664, guid: a710cf5df78c7144c8d06022e6ce29fc,
     type: 2}
   m_PrefabInternal: {fileID: 604166341}
---- !u!114 &604166344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 604166343}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84ef669f6085a3b4a8d4ff676a4d437f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 1516683823}
-  fTankSpeed: 0.05
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  gTank: {fileID: 604166343}
-  gCannon: {fileID: 1516683822}
 --- !u!114 &604166346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4095,44 +4038,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1612596413617664, guid: a710cf5df78c7144c8d06022e6ce29fc,
     type: 2}
   m_PrefabInternal: {fileID: 864979271}
---- !u!114 &864979274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 864979273}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84ef669f6085a3b4a8d4ff676a4d437f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 1650631032}
-  fTankSpeed: 0.05
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  gTank: {fileID: 864979273}
-  gCannon: {fileID: 1650631031}
---- !u!114 &864979275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 864979273}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1e390833d2b8d4baf84027a7dfbec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 1650631032}
-  fTankSpeed: 0.1
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  iTankId: 0
-  gTank: {fileID: 864979273}
 --- !u!114 &864979276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4355,44 +4260,6 @@ MonoBehaviour:
   iHealth: 0
   iMaxHealth: 100
   txHealth: {fileID: 1401564701}
---- !u!114 &899741760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 899741757}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1e390833d2b8d4baf84027a7dfbec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 1614805133}
-  fTankSpeed: 0.1
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  iTankId: 0
-  gTank: {fileID: 899741757}
---- !u!114 &899741761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 899741757}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84ef669f6085a3b4a8d4ff676a4d437f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 1614805133}
-  fTankSpeed: 0.05
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  gTank: {fileID: 899741757}
-  gCannon: {fileID: 1614805132}
 --- !u!1 &963100438
 GameObject:
   m_ObjectHideFlags: 0
@@ -5238,44 +5105,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1612596413617664, guid: a710cf5df78c7144c8d06022e6ce29fc,
     type: 2}
   m_PrefabInternal: {fileID: 1040197431}
---- !u!114 &1040197434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1040197433}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84ef669f6085a3b4a8d4ff676a4d437f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 117191337}
-  fTankSpeed: 0.05
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  gTank: {fileID: 1040197433}
-  gCannon: {fileID: 117191336}
---- !u!114 &1040197435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1040197433}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1e390833d2b8d4baf84027a7dfbec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 117191337}
-  fTankSpeed: 0.1
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  iTankId: 0
-  gTank: {fileID: 1040197433}
 --- !u!114 &1040197436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6089,44 +5918,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1612596413617664, guid: a710cf5df78c7144c8d06022e6ce29fc,
     type: 2}
   m_PrefabInternal: {fileID: 1141665670}
---- !u!114 &1141665673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1141665672}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84ef669f6085a3b4a8d4ff676a4d437f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 1882786687}
-  fTankSpeed: 0.05
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  gTank: {fileID: 1141665672}
-  gCannon: {fileID: 1882786686}
---- !u!114 &1141665674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1141665672}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1e390833d2b8d4baf84027a7dfbec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 1882786687}
-  fTankSpeed: 0.1
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  iTankId: 0
-  gTank: {fileID: 1141665672}
 --- !u!114 &1141665675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7137,44 +6928,6 @@ MonoBehaviour:
   iHealth: 0
   iMaxHealth: 100
   txHealth: {fileID: 1983425361}
---- !u!114 &1314747461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1314747458}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1e390833d2b8d4baf84027a7dfbec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 1758221718}
-  fTankSpeed: 0.1
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  iTankId: 0
-  gTank: {fileID: 1314747458}
---- !u!114 &1314747462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1314747458}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84ef669f6085a3b4a8d4ff676a4d437f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 1758221718}
-  fTankSpeed: 0.05
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  gTank: {fileID: 1314747458}
-  gCannon: {fileID: 1758221717}
 --- !u!1001 &1326768383
 Prefab:
   m_ObjectHideFlags: 0
@@ -7869,44 +7622,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1612596413617664, guid: a710cf5df78c7144c8d06022e6ce29fc,
     type: 2}
   m_PrefabInternal: {fileID: 1392894662}
---- !u!114 &1392894665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1392894664}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84ef669f6085a3b4a8d4ff676a4d437f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 1054953444}
-  fTankSpeed: 0.05
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  gTank: {fileID: 1392894664}
-  gCannon: {fileID: 1054953443}
---- !u!114 &1392894666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1392894664}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1e390833d2b8d4baf84027a7dfbec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 1054953444}
-  fTankSpeed: 0.1
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  iTankId: 0
-  gTank: {fileID: 1392894664}
 --- !u!114 &1392894667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8747,44 +8462,6 @@ MonoBehaviour:
   iHealth: 0
   iMaxHealth: 100
   txHealth: {fileID: 250371573}
---- !u!114 &1487355989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1487355986}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1e390833d2b8d4baf84027a7dfbec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 1273893512}
-  fTankSpeed: 0.1
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  iTankId: 0
-  gTank: {fileID: 1487355986}
---- !u!114 &1487355990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1487355986}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84ef669f6085a3b4a8d4ff676a4d437f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 1273893512}
-  fTankSpeed: 0.05
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  gTank: {fileID: 1487355986}
-  gCannon: {fileID: 1273893511}
 --- !u!1001 &1495738609
 Prefab:
   m_ObjectHideFlags: 0
@@ -8901,44 +8578,6 @@ MonoBehaviour:
   iHealth: 0
   iMaxHealth: 100
   txHealth: {fileID: 512575167}
---- !u!114 &1495738614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1495738611}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1e390833d2b8d4baf84027a7dfbec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 979605411}
-  fTankSpeed: 0.1
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  iTankId: 0
-  gTank: {fileID: 1495738611}
---- !u!114 &1495738615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1495738611}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84ef669f6085a3b4a8d4ff676a4d437f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 979605411}
-  fTankSpeed: 0.05
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  gTank: {fileID: 1495738611}
-  gCannon: {fileID: 979605410}
 --- !u!1 &1496184126
 GameObject:
   m_ObjectHideFlags: 0
@@ -12986,44 +12625,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1612596413617664, guid: a710cf5df78c7144c8d06022e6ce29fc,
     type: 2}
   m_PrefabInternal: {fileID: 1958694527}
---- !u!114 &1958694530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1958694529}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84ef669f6085a3b4a8d4ff676a4d437f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 1620050818}
-  fTankSpeed: 0.05
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  gTank: {fileID: 1958694529}
-  gCannon: {fileID: 1620050817}
---- !u!114 &1958694531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1958694529}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1e390833d2b8d4baf84027a7dfbec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 1620050818}
-  fTankSpeed: 0.1
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  iTankId: 0
-  gTank: {fileID: 1958694529}
 --- !u!114 &1958694532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13783,44 +13384,6 @@ MonoBehaviour:
   iHealth: 0
   iMaxHealth: 100
   txHealth: {fileID: 1783653503}
---- !u!114 &2066469872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2066469869}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1e390833d2b8d4baf84027a7dfbec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 982570681}
-  fTankSpeed: 0.1
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  iTankId: 0
-  gTank: {fileID: 2066469869}
---- !u!114 &2066469873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2066469869}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84ef669f6085a3b4a8d4ff676a4d437f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 982570681}
-  fTankSpeed: 0.05
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  gTank: {fileID: 2066469869}
-  gCannon: {fileID: 982570680}
 --- !u!1001 &2070496710
 Prefab:
   m_ObjectHideFlags: 0
@@ -13941,44 +13504,6 @@ MonoBehaviour:
   iHealth: 0
   iMaxHealth: 100
   txHealth: {fileID: 1528686866}
---- !u!114 &2070496715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2070496712}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1e390833d2b8d4baf84027a7dfbec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 1580286915}
-  fTankSpeed: 0.1
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  iTankId: 0
-  gTank: {fileID: 2070496712}
---- !u!114 &2070496716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2070496712}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84ef669f6085a3b4a8d4ff676a4d437f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
-    type: 2}
-  tCurrentCannon: {fileID: 1580286915}
-  fTankSpeed: 0.05
-  fMaxRelativeVelocity: 1
-  fMisileForce: 5
-  gTank: {fileID: 2070496712}
-  gCannon: {fileID: 1580286914}
 --- !u!1 &2088651298
 GameObject:
   m_ObjectHideFlags: 0
