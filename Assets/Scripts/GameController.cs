@@ -6,7 +6,10 @@ public class GameController : MonoBehaviour {
 
 	SceneChange sSceneChange;
 	[SerializeField] GameObject gObject;
-	[SerializeField] GameObject gForrest;
+    [SerializeField] GameObject gCamera1;
+    [SerializeField] GameObject gCamera2;
+    [SerializeField] GameObject gCamera3;
+    [SerializeField] GameObject gForrest;
 	[SerializeField] GameObject gMushroom;
 	[SerializeField] GameObject gBeach;
 	private int iFetchMap;
@@ -17,7 +20,10 @@ public class GameController : MonoBehaviour {
 	{
 
 		sSceneChange = gObject.GetComponent<SceneChange>();
-		gMushroom.SetActive(false);
+        gCamera1.SetActive(false);
+        gCamera2.SetActive(false);
+        gCamera3.SetActive(false);
+        gMushroom.SetActive(false);
 		gForrest.SetActive(false);
 		gBeach.SetActive(false);
 		//iFetchMap = SceneChange.iMapChoice;
@@ -34,7 +40,8 @@ public class GameController : MonoBehaviour {
 		if (iFetchMap == 1)
         {
 
-			gMushroom.SetActive(true);
+            gCamera1.SetActive(true);
+            gMushroom.SetActive(true);
 			Debug.Log("Mushroom map active");
 
 		}
@@ -42,7 +49,8 @@ public class GameController : MonoBehaviour {
 		if (iFetchMap == 2)
 		{
 
-			gForrest.SetActive(true);
+            gCamera2.SetActive(true);
+            gForrest.SetActive(true);
 			Debug.Log("Forrest map active");
 
 		}
@@ -50,7 +58,8 @@ public class GameController : MonoBehaviour {
 		if (iFetchMap == 3)
 		{
 
-			gBeach.SetActive(true);
+            gCamera3.SetActive(true);
+            gBeach.SetActive(true);
 			Debug.Log("Beach map active");
 
 		}

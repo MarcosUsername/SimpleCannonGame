@@ -60,7 +60,7 @@ public class TankSingle : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
 
-            vcPosition.y += fTankSpeed;
+            vcPosition.y += fTankSpeed + 0.1f;
 
         }
 
@@ -71,12 +71,12 @@ public class TankSingle : MonoBehaviour
 
         }
 
-        if (Input.GetKey(KeyCode.S))
+        /*if (Input.GetKey(KeyCode.S))
         {
 
             vcPosition.y -= fTankSpeed;
 
-        }
+        }*/
 
         if (Input.GetKey(KeyCode.D))
         {
@@ -95,14 +95,14 @@ public class TankSingle : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
 
-            gCannon.gameObject.transform.Rotate(0, 0, 0.5f);
+            gCannon.gameObject.transform.Rotate(0, 0, 3f);
 
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
 
-            gCannon.gameObject.transform.Rotate(0, 0, -0.5f);
+            gCannon.gameObject.transform.Rotate(0, 0, -3f);
 
         }
 

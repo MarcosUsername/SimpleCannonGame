@@ -10,16 +10,20 @@ public class SceneChange : MonoBehaviour
 
     SceneController sSceneController;
     [SerializeField] GameObject gObject;
+
     public int iMapChoice;
     public int iGameMode;
+
+    public int iEnemyKilled;
 
     void Start()
     {
 
         iGameMode = 3;
-        iMapChoice = 1;
+        //iMapChoice = 1;
+        iEnemyKilled = 0;
         sSceneController = gObject.GetComponent<SceneController>();
-        //iMapChoice = Random.Range(1, 3);
+        iMapChoice = Random.Range(1, 4);
         //Debug.Log("The chosen map number is " + iMapChoice);
 
     }
@@ -27,7 +31,20 @@ public class SceneChange : MonoBehaviour
     void Update()
     {
 
+        if (iMapChoice == 4)
+        {
 
+            iMapChoice = Random.Range(1, 4);
+
+        }
+
+        if(iEnemyKilled >= 5)
+        {
+
+            SceneChangeEnd();
+            Debug.Log("Game has been won!");
+
+        }
 
     }
 
@@ -58,7 +75,7 @@ public class SceneChange : MonoBehaviour
     public void SceneChangeLoadSingle()
     {
 
-        iGameMode = 0;
+        //iGameMode = 0;
         SceneManager.LoadScene("Load Scene");
         Debug.Log("Chaning to the 'LOAD SCENE' then 'SINGLE'");
 
@@ -67,7 +84,7 @@ public class SceneChange : MonoBehaviour
     public void SceneChangeLoadMulti()
     {
 
-        iGameMode = 1;
+        //iGameMode = 1;
         SceneManager.LoadScene("Load Scene");
         Debug.Log("Chaning to the 'LOAD SCENE' then 'MULTI'");
 
@@ -76,7 +93,7 @@ public class SceneChange : MonoBehaviour
     public void SceneChangeSingle()
     {
 
-        iMapChoice = Random.Range(1, 3);
+        iMapChoice = Random.Range(1, 4);
         Debug.Log("The chosen map number is " + iMapChoice);
 
         SceneManager.LoadScene("Single Scene");
@@ -87,7 +104,7 @@ public class SceneChange : MonoBehaviour
     public void SceneChangeMulti()
     {
 
-        iMapChoice = Random.Range(1, 3);
+        iMapChoice = Random.Range(1, 4);
         Debug.Log("The chosen map number is " + iMapChoice);
 
         SceneManager.LoadScene("Multi Scene");
@@ -100,6 +117,14 @@ public class SceneChange : MonoBehaviour
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Debug.Log("The game will restart");
+
+    }
+
+    public void SceneChangeEnd()
+    {
+
+        SceneManager.LoadScene("End Scene");
+        Debug.Log("Chaning to the 'END SCENE'");
 
     }
 
