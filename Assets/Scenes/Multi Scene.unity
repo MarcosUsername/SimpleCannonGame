@@ -1359,10 +1359,11 @@ MonoBehaviour:
   bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
     type: 2}
   tCurrentCannon: {fileID: 256055079}
-  fTankSpeed: 5
-  fMaxRelativeVelocity: 10
+  fTankSpeed: 0.1
+  fMaxRelativeVelocity: 1
   fMisileForce: 5
   iTankId: 0
+  gTank: {fileID: 371154066}
 --- !u!4 &371154073 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4371279818096480, guid: a710cf5df78c7144c8d06022e6ce29fc,
@@ -1708,6 +1709,7 @@ MonoBehaviour:
   fMaxRelativeVelocity: 10
   fMisileForce: 5
   iTankId: 0
+  gTank: {fileID: 0}
 --- !u!114 &519189435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2231,6 +2233,7 @@ MonoBehaviour:
   fMaxRelativeVelocity: 10
   fMisileForce: 5
   iTankId: 0
+  gTank: {fileID: 0}
 --- !u!114 &706969863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2753,6 +2756,7 @@ MonoBehaviour:
   fMaxRelativeVelocity: 10
   fMisileForce: 5
   iTankId: 0
+  gTank: {fileID: 882257730}
 --- !u!114 &882257732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2865,6 +2869,7 @@ MonoBehaviour:
   fMaxRelativeVelocity: 10
   fMisileForce: 5
   iTankId: 0
+  gTank: {fileID: 883968482}
 --- !u!114 &883968484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3054,6 +3059,7 @@ MonoBehaviour:
   fMaxRelativeVelocity: 10
   fMisileForce: 5
   iTankId: 0
+  gTank: {fileID: 0}
 --- !u!1 &1010644346
 GameObject:
   m_ObjectHideFlags: 0
@@ -3981,6 +3987,7 @@ MonoBehaviour:
   fMaxRelativeVelocity: 10
   fMisileForce: 5
   iTankId: 0
+  gTank: {fileID: 0}
 --- !u!114 &1249624476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4170,10 +4177,11 @@ MonoBehaviour:
   bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
     type: 2}
   tCurrentCannon: {fileID: 1966849076}
-  fTankSpeed: 5
-  fMaxRelativeVelocity: 10
+  fTankSpeed: 0.1
+  fMaxRelativeVelocity: 1
   fMisileForce: 5
   iTankId: 0
+  gTank: {fileID: 1313680635}
 --- !u!4 &1313680642 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4371279818096480, guid: a710cf5df78c7144c8d06022e6ce29fc,
@@ -4351,6 +4359,7 @@ MonoBehaviour:
   fMaxRelativeVelocity: 10
   fMisileForce: 5
   iTankId: 0
+  gTank: {fileID: 1364405152}
 --- !u!114 &1364405154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5056,6 +5065,7 @@ MonoBehaviour:
   fMaxRelativeVelocity: 10
   fMisileForce: 5
   iTankId: 0
+  gTank: {fileID: 1660110995}
 --- !u!1 &1674849282
 GameObject:
   m_ObjectHideFlags: 0
@@ -5907,10 +5917,11 @@ MonoBehaviour:
   bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
     type: 2}
   tCurrentCannon: {fileID: 471518693}
-  fTankSpeed: 5
-  fMaxRelativeVelocity: 10
+  fTankSpeed: 0.1
+  fMaxRelativeVelocity: 1
   fMisileForce: 5
   iTankId: 0
+  gTank: {fileID: 1888595597}
 --- !u!4 &1888595604 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4371279818096480, guid: a710cf5df78c7144c8d06022e6ce29fc,
@@ -6092,7 +6103,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6462b155032174e952e14fa3fbeb44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gObject: {fileID: 0}
   iMapChoice: 0
+  iGameMode: 0
 --- !u!1 &1934469943
 GameObject:
   m_ObjectHideFlags: 0
@@ -6186,10 +6199,11 @@ MonoBehaviour:
   bulletPrefab: {fileID: 50939604407579482, guid: a814cb21c387a954a81d688d38268962,
     type: 2}
   tCurrentCannon: {fileID: 1026238409}
-  fTankSpeed: 5
-  fMaxRelativeVelocity: 10
+  fTankSpeed: 0.1
+  fMaxRelativeVelocity: 1
   fMisileForce: 5
   iTankId: 0
+  gTank: {fileID: 1949928814}
 --- !u!114 &1949928816
 MonoBehaviour:
   m_ObjectHideFlags: 0

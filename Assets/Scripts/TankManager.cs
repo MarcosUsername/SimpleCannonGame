@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TankManager : MonoBehaviour
 {
-    Tank[] tanks;
+    TankMulti[] tanks;
     public Transform tTankCamera;
 
     public static TankManager singleton;
@@ -24,7 +24,7 @@ public class TankManager : MonoBehaviour
 
         singleton = this;
 
-        tanks = GameObject.FindObjectsOfType<Tank>();
+        tanks = GameObject.FindObjectsOfType<TankMulti>();
         tTankCamera = Camera.main.transform;
 
         for (int i = 0; i < tanks.Length; i++)

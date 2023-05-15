@@ -95,6 +95,14 @@ public class SceneChange : MonoBehaviour
 
     }
 
+    public void ResetTheGame()
+    {
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("The game will restart");
+
+    }
+
     public void Quit()
     {
 
