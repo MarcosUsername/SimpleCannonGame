@@ -2,42 +2,44 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class SceneController : MonoBehaviour 
 {
 
-	SceneChange sSceneChange;
+	public SceneChange sSceneChange;
 	[SerializeField] GameObject gObject;
 	public static string sPlayers;
 	public GameObject gInput;
-	private int iFetchGameMode;
+    public int iGameMode;
 
-	void Start () 
+    void Start () 
 	{
 
 		sSceneChange = gObject.GetComponent<SceneChange>();
-		iFetchGameMode = sSceneChange.iGameMode;
 
-	}
+    }
 	
 	void Update () 
 	{
 
-		if (iFetchGameMode == 0)
+		if (iGameMode == 1)
 		{
 
-			StartCoroutine(LoadSingle());
-			Debug.Log("Loading 'SINGLE SCENE' change");
+            Debug.Log("Loading 'SINGLE SCENE' change");
+            sSceneChange.SceneChangeSingle();
 
 		}
 
-		if (iFetchGameMode == 1)
+		if (iGameMode == 2)
 		{
 
-			StartCoroutine(LoadMulti());
-			Debug.Log("Loading 'Mutli SCENE' change");
+            Debug.Log("Loading 'Mutli SCENE' change");
+            sSceneChange.SceneChangeMulti();
 
-		}
+
+        }
 
 	}
 
@@ -48,22 +50,20 @@ public class SceneController : MonoBehaviour
 
 	}
 
-	public IEnumerator LoadSingle()
+    public void SingleGame()
     {
 
-		yield return new WaitForSeconds(5);
-		sSceneChange.SceneChangeSingle();
-		Debug.Log("Calling 'SINGLE SCENE' change");
+        iGameMode = 1;
+        Debug.Log("Chosen Singleplayer. Game mode is " + iGameMode);
 
-	}
+    }
 
-	public IEnumerator LoadMulti()
-	{
+    public void MultiGame()
+    {
 
-		yield return new WaitForSeconds(5);
-		sSceneChange.SceneChangeMulti();
-		Debug.Log("Calling 'MULTI SCENE' change");
+        iGameMode = 2;
+        Debug.Log("Chosen multiplayer, Game mode is " + iGameMode);
 
-	}
+    }
 
 }

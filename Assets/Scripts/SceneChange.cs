@@ -8,29 +8,21 @@ using Random = UnityEngine.Random;
 public class SceneChange : MonoBehaviour
 {
 
-    SceneController sSceneController;
-    [SerializeField] GameObject gObject;
-
     public int iMapChoice;
-    public int iGameMode;
-
     public int iEnemyKilled;
 
     void Start()
     {
 
-        iGameMode = 3;
-        //iMapChoice = 1;
         iEnemyKilled = 0;
-        sSceneController = gObject.GetComponent<SceneController>();
         iMapChoice = Random.Range(1, 4);
-        //Debug.Log("The chosen map number is " + iMapChoice);
 
     }
 
     void Update()
     {
 
+        //fail safe to make sure map is in correct range
         if (iMapChoice == 4)
         {
 
@@ -38,6 +30,7 @@ public class SceneChange : MonoBehaviour
 
         }
 
+        //Game win condition
         if(iEnemyKilled >= 5)
         {
 
@@ -47,6 +40,8 @@ public class SceneChange : MonoBehaviour
         }
 
     }
+
+    // ----- Here we will load all the difference scenes ----- //
 
     public void SceneChangeSplash()
     {
@@ -69,24 +64,6 @@ public class SceneChange : MonoBehaviour
 
         SceneManager.LoadScene("Options Scene");
         Debug.Log("Chaning to the 'OPTIONS SCENE'");
-
-    }
-
-    public void SceneChangeLoadSingle()
-    {
-
-        //iGameMode = 0;
-        SceneManager.LoadScene("Load Scene");
-        Debug.Log("Chaning to the 'LOAD SCENE' then 'SINGLE'");
-
-    }
-
-    public void SceneChangeLoadMulti()
-    {
-
-        //iGameMode = 1;
-        SceneManager.LoadScene("Load Scene");
-        Debug.Log("Chaning to the 'LOAD SCENE' then 'MULTI'");
 
     }
 

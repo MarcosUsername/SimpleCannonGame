@@ -252,6 +252,7 @@ GameObject:
   - component: {fileID: 158895547}
   - component: {fileID: 158895548}
   - component: {fileID: 158895549}
+  - component: {fileID: 158895550}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -290,12 +291,31 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 158895546}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9395d33321141a4387aa5ce9bc8f1dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gObject: {fileID: 1917336158}
+  gCamera1: {fileID: 1456699342}
+  gCamera2: {fileID: 1456699342}
+  gCamera3: {fileID: 1456699342}
+  gForrest: {fileID: 1800605515}
+  gMushroom: {fileID: 12086795}
+  gBeach: {fileID: 858370942}
+--- !u!114 &158895550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 158895546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4afacaff42968a46b9920fa2a7b7469, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gObject: {fileID: 1917336158}
+  gCamera: {fileID: 1456699342}
   gForrest: {fileID: 1800605515}
   gMushroom: {fileID: 12086795}
   gBeach: {fileID: 858370942}
@@ -714,7 +734,7 @@ GameObject:
   - component: {fileID: 256055079}
   - component: {fileID: 256055080}
   m_Layer: 0
-  m_Name: Cannoon
+  m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1709,7 +1729,7 @@ MonoBehaviour:
   fMaxRelativeVelocity: 10
   fMisileForce: 5
   iTankId: 0
-  gTank: {fileID: 0}
+  gTank: {fileID: 519189433}
 --- !u!114 &519189435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1929,7 +1949,7 @@ GameObject:
   - component: {fileID: 662679362}
   - component: {fileID: 662679363}
   m_Layer: 0
-  m_Name: Cannoon
+  m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2233,7 +2253,7 @@ MonoBehaviour:
   fMaxRelativeVelocity: 10
   fMisileForce: 5
   iTankId: 0
-  gTank: {fileID: 0}
+  gTank: {fileID: 706969861}
 --- !u!114 &706969863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2391,7 +2411,7 @@ GameObject:
   - component: {fileID: 778647326}
   - component: {fileID: 778647327}
   m_Layer: 0
-  m_Name: Cannoon
+  m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3059,7 +3079,7 @@ MonoBehaviour:
   fMaxRelativeVelocity: 10
   fMisileForce: 5
   iTankId: 0
-  gTank: {fileID: 0}
+  gTank: {fileID: 1007482170}
 --- !u!1 &1010644346
 GameObject:
   m_ObjectHideFlags: 0
@@ -3987,7 +4007,7 @@ MonoBehaviour:
   fMaxRelativeVelocity: 10
   fMisileForce: 5
   iTankId: 0
-  gTank: {fileID: 0}
+  gTank: {fileID: 1249624474}
 --- !u!114 &1249624476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4584,7 +4604,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BackGroundColor: {r: 0.4156863, g: 0.38823533, b: 0.3647059, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -6103,9 +6123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6462b155032174e952e14fa3fbeb44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gObject: {fileID: 0}
   iMapChoice: 0
-  iGameMode: 0
+  iEnemyKilled: 0
 --- !u!1 &1934469943
 GameObject:
   m_ObjectHideFlags: 0
