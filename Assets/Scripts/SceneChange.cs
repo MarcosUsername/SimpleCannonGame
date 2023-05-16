@@ -84,7 +84,7 @@ public class SceneChange : MonoBehaviour
         iMapChoice = Random.Range(1, 4);
         Debug.Log("The chosen map number is " + iMapChoice);
 
-        SceneManager.LoadScene("Multi Scene");
+        SceneManager.LoadScene("TargetRange");
         Debug.Log("Chaning to the 'MULTI SCENE'");
 
     }

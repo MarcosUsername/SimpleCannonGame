@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Single Scene.unity
     guid: efcd66d0a7b7af94d993bfbdd5921550
   - enabled: 1
+    path: Assets/Scenes/TargetRange.unity
+    guid: 746631feed0a8b447b535920cfdd2a10
+  - enabled: 0
     path: Assets/Scenes/Multi Scene.unity
     guid: d616b4e79aa99a54c94240a9ccb6b862
   - enabled: 1
